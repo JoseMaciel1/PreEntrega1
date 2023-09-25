@@ -5,13 +5,9 @@ function calcularCostoViaje() {
     let precio;
     let pais;
   
-    for (;;) {
-      pais = prompt("¿A dónde desea viajar? Elija entre Brasil, Uruguay o Chile:");
+    pais = prompt("¿A dónde desea viajar? Elija entre Brasil, Uruguay o Chile:");
+    while (pais != "ESC") {
   
-      if (pais === null) {
-        alert("No seleccionó un destino. Vuelva a intentarlo más tarde.");
-        return; 
-      }
   
       pais = pais.toLowerCase();
   
